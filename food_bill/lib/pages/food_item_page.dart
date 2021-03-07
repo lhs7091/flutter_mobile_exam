@@ -208,17 +208,17 @@ class _FoodItemPageState extends State<FoodItemPage> {
                 children: [
                   Positioned(
                     child: Container(
-                      width: 40,
+                      width: 35,
                       decoration: BoxDecoration(
                         color: Colors.white.withOpacity(0.8),
                         borderRadius: BorderRadius.circular(36),
                       ),
                       // Count set on Main two dishes
                       child: Column(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           IconButton(
-                            icon: Icon(Icons.add),
+                            icon: Icon(Icons.add, size: 15),
                             onPressed: () {
                               _count + 1 > 10 ? _count = 10 : _count++;
                               setState(() {
@@ -232,11 +232,11 @@ class _FoodItemPageState extends State<FoodItemPage> {
                             '$_count',
                             style: TextStyle(
                               fontWeight: FontWeight.bold,
-                              fontSize: 18.0,
+                              fontSize: 15.0,
                             ),
                           ),
                           IconButton(
-                            icon: Icon(Icons.remove),
+                            icon: Icon(Icons.remove, size: 15),
                             onPressed: () {
                               _count - 1 < 0 ? _count = 0 : _count--;
                               setState(() {
@@ -250,8 +250,8 @@ class _FoodItemPageState extends State<FoodItemPage> {
                       ),
                     ),
                     right: 10,
-                    bottom: 16,
-                    top: 30,
+                    bottom: 5,
+                    top: 10,
                   ),
                   Positioned(
                     child: CircleAvatar(

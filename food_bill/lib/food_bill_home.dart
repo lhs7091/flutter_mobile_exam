@@ -14,28 +14,31 @@ class _FoodBillHomePageState extends State<FoodBillHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Stack(
-          children: [
-            // Side Menu
-            Positioned(
-              left: 0,
-              top: 0,
-              child: buildSideMenuBar(),
-            ),
-            // Profile
-            Positioned(
-              right: 8,
-              top: 0,
-              child: Text(
-                "PROFILE",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
+        child: Padding(
+          padding: const EdgeInsets.only(top: 10.0),
+          child: Stack(
+            children: [
+              // Side Menu
+              Positioned(
+                left: 0,
+                top: 0,
+                child: buildSideMenuBar(),
+              ),
+              // Profile
+              Positioned(
+                right: 8,
+                top: 0,
+                child: Text(
+                  "PROFILE",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-            ),
-            // Food Item page
-            getPages(),
-          ],
+              // Food Item page
+              getPages(),
+            ],
+          ),
         ),
       ),
     );
