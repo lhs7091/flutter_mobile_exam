@@ -48,3 +48,4 @@ app.*.map.json
 # etc
 /test/
 /web/
+/lib/service_key.dart

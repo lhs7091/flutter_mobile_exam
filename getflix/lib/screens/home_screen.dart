@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:getflix/export.dart';
-import 'package:getflix/providers/weekly_trending_movie_provider.dart';
 import 'package:provider/provider.dart';
 
 class HomeScreen extends StatefulWidget {

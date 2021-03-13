@@ -1,10 +1,11 @@
 import 'dart:convert';
 
 import 'package:getflix/export.dart';
+import 'package:getflix/service_key.dart';
 import 'package:http/http.dart' as http;
 
 class WeeklyTrendingRepository {
-  var queryParam = {'api_key': '4a7f51b1f8a59f102fb18b0f9b2c5ef3'};
+  var queryParam = {'api_key': api_key};
 
   Future<List<WeeklyTrendingMovie>> loadWeeklyTrendingMovie() async {
     var uri =

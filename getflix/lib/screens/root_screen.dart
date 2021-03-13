@@ -45,9 +45,7 @@ class _RootScreenState extends State<RootScreen> {
       index: activeTab,
       children: [
         HomeScreen(),
-        Center(
-            child: Text('coming soon screen',
-                style: TextStyle(color: Colors.white))),
+        ComingSoonScreen(),
         Center(
             child:
                 Text('search screen', style: TextStyle(color: Colors.white))),
