@@ -46,9 +46,7 @@ class _RootScreenState extends State<RootScreen> {
       children: [
         HomeScreen(),
         ComingSoonScreen(),
-        Center(
-            child:
-                Text('search screen', style: TextStyle(color: Colors.white))),
+        SearchScreen(),
         Center(
             child: Text('downloads screen',
                 style: TextStyle(color: Colors.white))),

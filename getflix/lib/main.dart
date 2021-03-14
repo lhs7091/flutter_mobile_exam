@@ -31,6 +31,9 @@ class MyApp extends StatelessWidget {
           ChangeNotifierProvider(
             create: (BuildContext context) => ComingSoonMovieProvider(),
           ),
+          ChangeNotifierProvider(
+            create: (BuildContext context) => SearchMovieProvider(),
+          ),
         ],
         child: RootScreen(),
       ),
