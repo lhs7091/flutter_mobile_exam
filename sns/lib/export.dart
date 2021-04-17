@@ -9,3 +9,6 @@ export './screens/activity_feed_screen.dart';
 //widgets
 export './widgets/app_bar_widget.dart';
 export './widgets/progress_widget.dart';
+
+// controller
+export './controller/db_controller.dart';
