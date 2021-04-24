@@ -10,6 +10,7 @@ class DBController extends GetxController {
   setUsers() async {
     await userRef.get().then((snapshot) {
       _users = snapshot.docs;
+      update();
     });
   }
 }

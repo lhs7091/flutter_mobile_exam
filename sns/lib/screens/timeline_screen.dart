@@ -23,6 +23,7 @@ class _TimelineScreenState extends State<TimelineScreen> {
       appBar: appBar(context, title: 'SNS'),
       body: GetBuilder<DBController>(
         builder: (controller) {
+          print(controller.getUsers().length);
           users = controller.getUsers();
           if (users.length == 0) {
             return linearProgress();
